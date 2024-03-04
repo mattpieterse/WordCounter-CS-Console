@@ -10,6 +10,8 @@ internal class Program
 
         Console.WriteLine("Enter your text to be parsed.");
         Console.Write(">> ");
+        string text = Console.ReadLine();
+        Menu();
     }
 
     static void Menu()
@@ -17,12 +19,24 @@ internal class Program
         Console.Write('\n');
         Console.WriteLine("1 : Get properties of text");
         Console.WriteLine("0 : Exit application");
-        switch ((string) Console.ReadLine)
+        Console.Write(">> ");
+        string opt = Console.ReadLine();
+        Console.WriteLine('\n');
+        switch (opt)
         {
-
+            // Switch logic here
         }
-        Console.Write('\n');
     }
 
     // 
+
+    static int GetSize(string text)
+    {
+        return text.Length;
+    }
+
+    static int GetWords(string text) 
+    {
+        return 0;
+    }
 }
