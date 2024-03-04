@@ -11,10 +11,10 @@ internal class Program
         Console.WriteLine("Enter your text to be parsed.");
         Console.Write(">> ");
         string text = Console.ReadLine();
-        Menu();
+        Menu(text);
     }
 
-    static void Menu()
+    static void Menu(string text)
     {
         Console.Write('\n');
         Console.WriteLine("1 : Get properties of text");
@@ -24,8 +24,14 @@ internal class Program
         Console.WriteLine('\n');
         switch (opt)
         {
-            // Switch logic here
+            case "1" : Output(text);
+                break;
         }
+    }
+
+    static void Output(string text)
+    {
+
     }
 
     // 
